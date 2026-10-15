@@ -1,0 +1,126 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ---------------------------------------------------------------- core -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- ------------------------------------------------- study planner alarms -->
+    <!-- Android 13+ needs an explicit runtime prompt for notifications. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Reminders are weekly and inexact (`inexactAllowWhileIdle`), so we
+         deliberately do NOT request SCHEDULE_EXACT_ALARM: it triggers a Play
+         policy declaration and would be declined for a study reminder. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- ----------------------------------------------------------------- ads -->
+    <!-- Required by AdMob when targetSdk >= 33: without it declared, the SDK
+         cannot read the advertising id and fill rates collapse. -->
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <!-- Content is opened in the user's own browser/PDF viewer. -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:node="remove" />
+
+    <application
+        android:name="${applicationName}"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:enableOnBackInvokedCallback="true"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="false"
+        android:requestLegacyExternalStorage="false"
+        android:theme="@style/LaunchTheme">
+
+        <!-- AdMob application id. The value below is Google's official TEST app
+             id: replace it with your real ca-app-pub-...~... id for release.
+             Missing this meta-data crashes the app on first ad load. -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <!-- Disable the SDK's automatic launch of an ad on cold start: the
+             brief allows no ads on the reader/quiz, and a cold-start ad can
+             land there on a deep link. -->
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING"
+            android:value="true" />
+
+        <!-- FCM: channel + icon used for "new papers published" announcements -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="sriedu_announcements" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_sriedu" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/brand_teal" />
+
+        <!-- Flutter embedding -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+
+            <meta-data
+                android:name="io.flutter.embedding.android.NormalTheme"
+                android:resource="@style/NormalTheme" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Deep link: https://sriedu.lk/open/... (replace the host with
+                 your real domain before release; also add it to the Play
+                 Console "App links" and host /.well-known/assetlinks.json). -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" android:host="sriedu.lk" android:pathPrefix="/open" />
+            </intent-filter>
+        </activity>
+
+        <!-- Do not auto-initialise the whole Play Services stack at startup. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"
+            tools:node="merge" />
+    </application>
+
+    <!-- Android 11+ package visibility: without these, canLaunchUrl() always
+         returns false and "open official source" silently fails. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="http" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO" />
+            <data android:scheme="mailto" />
+        </intent>
+    </queries>
+</manifest>

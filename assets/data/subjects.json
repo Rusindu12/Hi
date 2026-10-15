@@ -1,0 +1,482 @@
+{
+ "version": 1,
+ "subjects": [
+  {
+   "code": "sinhala",
+   "names": {
+    "en": "Sinhala",
+    "si": "සිංහල",
+    "ta": "சிங்களம்"
+   },
+   "grades": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "translate",
+   "isExamSubject": true,
+   "sortOrder": 10
+  },
+  {
+   "code": "tamil",
+   "names": {
+    "en": "Tamil",
+    "si": "දෙමළ",
+    "ta": "தமிழ்"
+   },
+   "grades": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "translate",
+   "isExamSubject": true,
+   "sortOrder": 11
+  },
+  {
+   "code": "english",
+   "names": {
+    "en": "English",
+    "si": "ඉංග්‍රීසි",
+    "ta": "ஆங்கிலம்"
+   },
+   "grades": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "abc",
+   "isExamSubject": true,
+   "sortOrder": 12
+  },
+  {
+   "code": "mathematics",
+   "names": {
+    "en": "Mathematics",
+    "si": "ගණිතය",
+    "ta": "கணிதம்"
+   },
+   "grades": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "calculate",
+   "isExamSubject": true,
+   "sortOrder": 20
+  },
+  {
+   "code": "science",
+   "names": {
+    "en": "Science",
+    "si": "විද්‍යාව",
+    "ta": "விஞ்ஞானம்"
+   },
+   "grades": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "science",
+   "isExamSubject": true,
+   "sortOrder": 30
+  },
+  {
+   "code": "environment",
+   "names": {
+    "en": "Environment",
+    "si": "පරිසරය",
+    "ta": "சுற்றாடல்"
+   },
+   "grades": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "park",
+   "isExamSubject": false,
+   "sortOrder": 31
+  },
+  {
+   "code": "ict",
+   "names": {
+    "en": "ICT",
+    "si": "තොරතුරු තාක්ෂණය",
+    "ta": "தகவல் தொழில்நுட்பம்"
+   },
+   "grades": [
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "memory",
+   "isExamSubject": true,
+   "sortOrder": 40
+  },
+  {
+   "code": "history",
+   "names": {
+    "en": "History",
+    "si": "ඉතිහාසය",
+    "ta": "வரலாறு"
+   },
+   "grades": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "history",
+   "isExamSubject": true,
+   "sortOrder": 50
+  },
+  {
+   "code": "geography",
+   "names": {
+    "en": "Geography",
+    "si": "භූගෝල විද්‍යාව",
+    "ta": "புவியியல்"
+   },
+   "grades": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "public",
+   "isExamSubject": true,
+   "sortOrder": 51
+  },
+  {
+   "code": "civic",
+   "names": {
+    "en": "Civic Education",
+    "si": "පුරවැසි අධ්‍යාපනය",
+    "ta": "பிரஜை உரிமைக் கல்வி"
+   },
+   "grades": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "gavel",
+   "isExamSubject": false,
+   "sortOrder": 52
+  },
+  {
+   "code": "religion",
+   "names": {
+    "en": "Religion",
+    "si": "ආගම",
+    "ta": "மதம்"
+   },
+   "grades": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "self_improvement",
+   "isExamSubject": false,
+   "sortOrder": 53
+  },
+  {
+   "code": "health",
+   "names": {
+    "en": "Health & Physical Education",
+    "si": "සෞඛ්‍ය හා ශාරීරික අධ්‍යාපනය",
+    "ta": "சுகாதாரம்"
+   },
+   "grades": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "health",
+   "isExamSubject": false,
+   "sortOrder": 54
+  },
+  {
+   "code": "arts",
+   "names": {
+    "en": "Art",
+    "si": "චිත්‍ර කලාව",
+    "ta": "கலை"
+   },
+   "grades": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "palette",
+   "isExamSubject": false,
+   "sortOrder": 55
+  },
+  {
+   "code": "business_studies",
+   "names": {
+    "en": "Business Studies",
+    "si": "ව්‍යාපාර අධ්‍යයනය",
+    "ta": "வணிகக் கல்வி"
+   },
+   "grades": [
+    12,
+    13
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "storefront",
+   "isExamSubject": true,
+   "sortOrder": 60
+  },
+  {
+   "code": "accounting",
+   "names": {
+    "en": "Accounting",
+    "si": "ගිණුම්කරණය",
+    "ta": "கணக்கியல்"
+   },
+   "grades": [
+    12,
+    13
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "receipt_long",
+   "isExamSubject": true,
+   "sortOrder": 61
+  },
+  {
+   "code": "economics",
+   "names": {
+    "en": "Economics",
+    "si": "ආර්ථික විද්‍යාව",
+    "ta": "பொருளியல்"
+   },
+   "grades": [
+    12,
+    13
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "trending_up",
+   "isExamSubject": true,
+   "sortOrder": 62
+  },
+  {
+   "code": "biology",
+   "names": {
+    "en": "Biology",
+    "si": "ජීව විද්‍යාව",
+    "ta": "உயிரியல்"
+   },
+   "grades": [
+    12,
+    13
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "biotech",
+   "isExamSubject": true,
+   "sortOrder": 63
+  },
+  {
+   "code": "chemistry",
+   "names": {
+    "en": "Chemistry",
+    "si": "රසායන විද්‍යාව",
+    "ta": "இரசாயனவியல்"
+   },
+   "grades": [
+    12,
+    13
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "science",
+   "isExamSubject": true,
+   "sortOrder": 64
+  },
+  {
+   "code": "physics",
+   "names": {
+    "en": "Physics",
+    "si": "භෞතික විද්‍යාව",
+    "ta": "பௌதிகவியல்"
+   },
+   "grades": [
+    12,
+    13
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "bolt",
+   "isExamSubject": true,
+   "sortOrder": 65
+  },
+  {
+   "code": "agriculture",
+   "names": {
+    "en": "Agriculture",
+    "si": "කෘෂිකර්මය",
+    "ta": "விவசாயம்"
+   },
+   "grades": [
+    12,
+    13
+   ],
+   "mediums": [
+    "en",
+    "si",
+    "ta"
+   ],
+   "icon": "agriculture",
+   "isExamSubject": false,
+   "sortOrder": 66
+  }
+ ]
+}

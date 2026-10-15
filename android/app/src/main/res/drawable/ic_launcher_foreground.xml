@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Adaptive-icon foreground: an open book + amber bookmark on the teal
+     background. 108x108 viewport with the 72dp safe zone respected (all artwork
+     sits inside 18..90). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28,38 C37,34 45,34 54,38 L54,70 C45,66 37,66 28,70 Z" />
+    <path
+        android:fillColor="#E6F5F7"
+        android:pathData="M80,38 C71,34 63,34 54,38 L54,70 C63,66 71,66 80,70 Z" />
+    <path
+        android:fillColor="#0B6470"
+        android:fillAlpha="0.35"
+        android:pathData="M53,38 h2 v32 h-2 z" />
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M70,36 l6,-10 l6,10 l-6,7 z" />
+</vector>

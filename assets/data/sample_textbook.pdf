@@ -1,0 +1,204 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R 11 0 R] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 3 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 848 >>
+stream
+BT
+/F2 22 Tf
+72 770 Td
+(SriEdu Sample Reading) Tj
+ET
+0.15 0.55 0.6 RG
+1.4 w
+72 758 m 523 758 l S
+0.06 0.09 0.16 rg
+BT
+/F1 12 Tf
+18 TL
+72 730 Td
+(This is a generated sample document.) Tj T*
+() Tj T*
+(It exists so the in-app PDF reader can be demonstrated and tested) Tj T*
+(without downloading a real textbook, and without a network) Tj T*
+(connection of any kind.) Tj T*
+() Tj T*
+(The file is produced by tools/make_sample_pdf.py using only the) Tj T*
+(Python standard library, so it is reproducible and carries no) Tj T*
+(third-party licence obligations.) Tj T*
+() Tj T*
+(Use it to check: page rendering, pinch zoom, page restoration) Tj T*
+(\(reopen and you should land back on the page you left\), and the) Tj T*
+(reader's ad-free guarantee.) Tj T*
+ET
+0.45 0.5 0.58 rg
+BT
+/F1 9 Tf
+72 60 Td
+(SriEdu generated sample - safe to redistribute) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 3 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 950 >>
+stream
+BT
+/F2 22 Tf
+72 770 Td
+(How the catalogue works) Tj
+ET
+0.15 0.55 0.6 RG
+1.4 w
+72 758 m 523 758 l S
+0.06 0.09 0.16 rg
+BT
+/F1 12 Tf
+18 TL
+72 730 Td
+(Textbooks and past papers are published by government bodies.) Tj T*
+(SriEdu does not re-host them. Each catalogue item stores:) Tj T*
+() Tj T*
+(  id          a stable identifier, e.g. ol-2023-science-ta) Tj T*
+(  kind        textbook | paper | term_test | marking_scheme) Tj T*
+(  examType    ol | al | grade5 | term) Tj T*
+(  grade       the school grade \(1-13\)) Tj T*
+(  year        exam year, for papers) Tj T*
+(  medium      en | si | ta) Tj T*
+(  rights      official_link | open_license | bundled) Tj T*
+(  sourceUrl   the canonical publisher URL) Tj T*
+() Tj T*
+(Only items whose rights allow it are ever offered for offline) Tj T*
+(download. Everything else opens on the publisher's site.) Tj T*
+ET
+0.45 0.5 0.58 rg
+BT
+/F1 9 Tf
+72 60 Td
+(SriEdu generated sample - safe to redistribute) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 3 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 1070 >>
+stream
+BT
+/F2 22 Tf
+72 770 Td
+(Quiz data model) Tj
+ET
+0.15 0.55 0.6 RG
+1.4 w
+72 758 m 523 758 l S
+0.06 0.09 0.16 rg
+BT
+/F1 12 Tf
+18 TL
+72 730 Td
+(Questions live in the Firestore collection 'questions', mirrored) Tj T*
+(by assets/data/sample_questions.json for offline use.) Tj T*
+() Tj T*
+(Each question carries:) Tj T*
+() Tj T*
+(  subject         subject code, e.g. mathematics) Tj T*
+(  grade           grade level) Tj T*
+(  year            exam year the question came from) Tj T*
+(  examType        ol | al | grade5 | term) Tj T*
+(  medium          medium of the source paper) Tj T*
+(  questionText    { en, si, ta }) Tj T*
+(  options         [ { en, si, ta }, ... ] four of them) Tj T*
+(  correctAnswer   zero-based index into options) Tj T*
+(  explanation     { en, si, ta }, shown after answering) Tj T*
+() Tj T*
+(Question banks can also be stored as a single document per) Tj T*
+(subject/exam/year, which costs one read per quiz and needs no) Tj T*
+(composite index.) Tj T*
+ET
+0.45 0.5 0.58 rg
+BT
+/F1 9 Tf
+72 60 Td
+(SriEdu generated sample - safe to redistribute) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 3 0 R >> >> /Contents 12 0 R >>
+endobj
+12 0 obj
+<< /Length 769 >>
+stream
+BT
+/F2 22 Tf
+72 770 Td
+(Streak rules) Tj
+ET
+0.15 0.55 0.6 RG
+1.4 w
+72 758 m 523 758 l S
+0.06 0.09 0.16 rg
+BT
+/F1 12 Tf
+18 TL
+72 730 Td
+(A day counts towards the streak when the student either:) Tj T*
+() Tj T*
+(  * opens a textbook or past paper \(in-app or at its source\), or) Tj T*
+(  * completes a quiz attempt.) Tj T*
+() Tj T*
+(Rules:) Tj T*
+() Tj T*
+(  * Consecutive calendar days build the streak.) Tj T*
+(  * One missed day breaks it, unless a streak freeze is spent.) Tj T*
+(  * One free freeze per calendar week.) Tj T*
+(  * Longest streak and lifetime study days are never reset.) Tj T*
+() Tj T*
+(Everything is stored on the device. No account, no upload.) Tj T*
+ET
+0.45 0.5 0.58 rg
+BT
+/F1 9 Tf
+72 60 Td
+(SriEdu generated sample - safe to redistribute) Tj
+ET
+endstream
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000140 00000 n 
+0000000242 00000 n 
+0000000339 00000 n 
+0000000475 00000 n 
+0000001373 00000 n 
+0000001509 00000 n 
+0000002509 00000 n 
+0000002646 00000 n 
+0000003768 00000 n 
+0000003906 00000 n 
+trailer
+<< /Size 13 /Root 1 0 R >>
+startxref
+4726
+%%EOF

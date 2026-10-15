@@ -1,0 +1,62 @@
+{
+ "version": 1,
+ "sources": [
+  {
+   "id": "nie",
+   "names": {
+    "en": "National Institute of Education",
+    "si": "ජාතික අධ්‍යාපන ආයතනය",
+    "ta": "தேசிய கல்வி நிறுவனம்"
+   },
+   "url": "https://nie.lk",
+   "hosts": [
+    "nie.lk",
+    "www.nie.lk"
+   ],
+   "note": {
+    "en": "Publishes the government school textbooks used by SriEdu.",
+    "si": "SriEdu භාවිතා කරන රජයේ පාසල් පෙළපොත් පළ කරයි.",
+    "ta": "SriEdu பயன்படுத்தும் அரச பாடநூல்களை வெளியிடுகிறது."
+   },
+   "category": "textbooks"
+  },
+  {
+   "id": "doenets",
+   "names": {
+    "en": "Department of Examinations",
+    "si": "විභාග දෙපාර්තමේන්තුව",
+    "ta": "தேர்வுத் திணைக்களம்"
+   },
+   "url": "https://www.doenets.lk",
+   "hosts": [
+    "doenets.lk",
+    "www.doenets.lk"
+   ],
+   "note": {
+    "en": "Publishes O/L, A/L and Grade 5 past papers and marking schemes.",
+    "si": "සා.පෙ.ළ, උ.පෙ.ළ සහ 5 ශ්‍රේණියේ පසුගිය ප්‍රශ්න පත්‍ර පළ කරයි.",
+    "ta": "சா.த., உ.த. மற்றும் தரம் 5 வினாத்தாள்களை வெளியிடுகிறது."
+   },
+   "category": "papers"
+  },
+  {
+   "id": "moe",
+   "names": {
+    "en": "Ministry of Education",
+    "si": "අධ්‍යාපන අමාත්‍යාංශය",
+    "ta": "கல்வி அமைச்சு"
+   },
+   "url": "https://moe.gov.lk",
+   "hosts": [
+    "moe.gov.lk",
+    "www.moe.gov.lk"
+   ],
+   "note": {
+    "en": "Circulars, term test guidance and school notices.",
+    "si": "චක්‍රලේඛ, වාර පරීක්ෂණ මාර්ගෝපදේශ සහ පාසල් නිවේදන.",
+    "ta": "சுற்றறிக்கைகள், தவணைத் தேர்வு வழிகாட்டல் மற்றும் பாடசாலை அறிவிப்புகள்."
+   },
+   "category": "notices"
+  }
+ ]
+}

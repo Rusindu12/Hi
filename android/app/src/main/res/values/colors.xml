@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Must match AppColors in lib/core/theme/app_colors.dart -->
+    <color name="brand_teal">#FF0F7B8A</color>
+    <color name="brand_blue">#FF2563EB</color>
+    <color name="brand_amber">#FFFBBF24</color>
+    <color name="canvas">#FFF5F8FB</color>
+    <color name="canvas_dark">#FF0B1220</color>
+    <color name="ic_launcher_background">#FF0F7B8A</color>
+</resources>

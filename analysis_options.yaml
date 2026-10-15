@@ -1,0 +1,39 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "lib/l10n/generated/**"
+    - "**/*.g.dart"
+  errors:
+    # Missing awaits on fire-and-forget analytics/notification calls are handled
+    # explicitly in the service layer, so we promote them to warnings elsewhere.
+    unawaited_futures: warning
+    missing_required_param: error
+    missing_return: error
+
+linter:
+  rules:
+    - always_declare_return_types
+    - avoid_print
+    - prefer_const_constructors
+    - prefer_const_constructors_in_immutables
+    - prefer_const_declarations
+    - prefer_final_locals
+    - prefer_single_quotes
+    - sized_box_for_whitespace
+    - sort_child_properties_last
+    - use_super_parameters
+
+# ---------------------------------------------------------------------------
+# Project rules enforced by tooling (not by the analyzer):
+#
+# 1. ZERO ADS in the PDF reader and quiz screens.
+#    A unit test (test/unit/ad_placement_test.dart) scans lib/features/pdf_reader
+#    and lib/features/quiz for any Ad widget import and fails the build if found.
+#    The test is registered as `flutter test`, so run it in CI before release.
+#
+# 2. NO hard-coded user-visible strings.
+#    Every string in lib/features/**, lib/shared/** and lib/services/** must come
+#    from AppLocalizations or from localised content JSON. `avoid_print` plus the
+#    string-audit script in tools/verify_project.py keep an eye on this.
+# ---------------------------------------------------------------------------

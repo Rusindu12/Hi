@@ -1,0 +1,402 @@
+{
+  "@@locale": "en",
+  "appName": "SriEdu",
+  "appTagline": "Study smarter, every day",
+  "navHome": "Home",
+  "navBooks": "Books",
+  "navPapers": "Papers",
+  "navQuiz": "Quiz",
+  "navLibrary": "Library",
+  "actionNext": "Next",
+  "actionBack": "Back",
+  "actionSkip": "Skip",
+  "actionDone": "Done",
+  "actionSave": "Save",
+  "actionCancel": "Cancel",
+  "actionDelete": "Delete",
+  "actionRetry": "Retry",
+  "actionCopy": "Copy",
+  "actionClearAll": "Clear all",
+  "actionSeeAll": "See all",
+  "labelAll": "All",
+  "labelSubject": "Subject",
+  "labelYear": "Year",
+  "labelMedium": "Medium",
+  "labelFileSize": "File size",
+  "labelOptional": "Optional",
+  "labelToday": "Today",
+  "mediumEnglish": "English medium",
+  "mediumSinhala": "Sinhala medium",
+  "mediumTamil": "Tamil medium",
+  "chooseLanguageTitle": "Choose your language",
+  "chooseLanguageSubtitle": "You can change this any time in Settings.",
+  "onboardTitle1": "Every textbook in one app",
+  "onboardBody1": "Grades 1 to 13, plus past papers and marking schemes — organised by grade, subject and medium.",
+  "onboardTitle2": "Practise like the real exam",
+  "onboardBody2": "Timed MCQ quizzes built from real past paper questions, with instant scoring and explanations.",
+  "onboardTitle3": "Build a daily study habit",
+  "onboardBody3": "Keep a study streak alive, earn badges, and set reminders so no day is wasted.",
+  "onboardGetStarted": "Get started",
+  "greetingMorning": "Good morning",
+  "greetingAfternoon": "Good afternoon",
+  "greetingEvening": "Good evening",
+  "greetingWithName": "{greeting}, {name}!",
+  "@greetingWithName": {
+    "placeholders": {
+      "greeting": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeTextbooks": "Textbooks",
+  "homeTextbooksSubtitle": "Grades 1–13",
+  "homePastPapers": "Past papers",
+  "homePastPapersSubtitle": "O/L, A/L & more",
+  "homeQuizzes": "Quizzes",
+  "homeQuizzesSubtitle": "Instant scoring",
+  "homeMyLibrary": "My library",
+  "homeMyLibrarySubtitle": "Downloads & history",
+  "homeContinue": "Continue where you left off",
+  "homeContinueEmpty": "Open a textbook or past paper and it will show up here.",
+  "homeTrending": "Trending this week",
+  "homeTrendingEmpty": "Trending papers appear once the catalogue is synced.",
+  "homeStreak": "Study streak",
+  "homeStreakDays": "{count, plural, =0{No streak yet} =1{1 day} other{{count} days}}",
+  "@homeStreakDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeStreakEmpty": "Open a book or finish a quiz today to start your streak.",
+  "homeStreakAtRisk": "Study today to keep your streak alive!",
+  "homeBadges": "Badges",
+  "homeBadgesEarned": "{earned} of {total} earned",
+  "@homeBadgesEarned": {
+    "placeholders": {
+      "earned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "homePlannerCard": "Today's plan",
+  "homePlannerEmpty": "No study slots yet. Build a timetable and get daily reminders.",
+  "homeProgressLabel": "Last page {page}",
+  "@homeProgressLabel": {
+    "placeholders": {
+      "page": {
+        "type": "int"
+      }
+    }
+  },
+  "tbTitle": "Textbooks",
+  "tbSubtitle": "Pick your grade to begin",
+  "tbGradeLabel": "Grade {grade}",
+  "@tbGradeLabel": {
+    "placeholders": {
+      "grade": {
+        "type": "int"
+      }
+    }
+  },
+  "tbSubjectCount": "{count, plural, =1{1 subject} other{{count} subjects}}",
+  "@tbSubjectCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tbSearchHint": "Search subject or title",
+  "tbEmpty": "No textbooks here yet",
+  "tbEmptyBody": "Books are loaded from the official catalogue. Sync or check your connection and try again.",
+  "tbOfficialBadge": "Official source",
+  "tbOfficialBody": "This textbook is published by the National Institute of Education. It opens in your browser from the official site — SriEdu never re-hosts copyrighted books.",
+  "tbOpenOfficial": "Open official source",
+  "tbCannotOpen": "Could not open the official source. Please check the link in Settings › Official sources.",
+  "ppTitle": "Past papers",
+  "ppTabOl": "O/L",
+  "ppTabAl": "A/L",
+  "ppTabGrade5": "Grade 5",
+  "ppTabTerm": "Term tests",
+  "ppDownloads": "{count, plural, =1{1 download} other{{count} downloads}}",
+  "@ppDownloads": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "ppMarkingScheme": "Marking scheme",
+  "ppMarkingSchemeAvailable": "Marking scheme available",
+  "ppNoMarkingScheme": "No marking scheme",
+  "ppEmpty": "No papers match these filters",
+  "ppEmptyBody": "Try a different subject, year or medium — or clear the filters.",
+  "ppClearFilters": "Clear filters",
+  "ppViewOfficial": "View on official site",
+  "ppTermTestNote": "Term test papers are school-based and published by schools.",
+  "quizTitle": "Quizzes",
+  "quizSubtitle": "Timed practice from real past papers",
+  "quizPickSubject": "Choose a subject",
+  "quizPickYear": "Choose a year",
+  "quizQuestionCount": "{count, plural, =1{1 question} other{{count} questions}}",
+  "@quizQuestionCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "quizStart": "Start quiz",
+  "quizNoQuestions": "No questions for this combination yet",
+  "quizNoQuestionsBody": "Pick another year or subject — new questions are added regularly.",
+  "quizQuestionOf": "Question {current} of {total}",
+  "@quizQuestionOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "quizTimeLeft": "{seconds}s",
+  "@quizTimeLeft": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "quizNext": "Next question",
+  "quizFinish": "Finish quiz",
+  "quizExitTitle": "Leave the quiz?",
+  "quizExitBody": "Your answers for this attempt will be lost.",
+  "quizExitConfirm": "Leave",
+  "quizResultTitle": "Quiz complete",
+  "quizYourScore": "Your score",
+  "quizScoreValue": "{correct} / {total}",
+  "@quizScoreValue": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "quizCorrectCount": "Correct",
+  "quizWrongCount": "Wrong",
+  "quizSkippedCount": "Skipped",
+  "quizReview": "Review answers",
+  "quizYourAnswer": "Your answer",
+  "quizCorrectAnswer": "Correct answer",
+  "quizNotAnswered": "Not answered",
+  "quizExplanation": "Explanation",
+  "quizTryAgain": "Try again",
+  "quizBackToList": "Back to quizzes",
+  "quizNewRecord": "New personal best!",
+  "quizPerfect": "Perfect score!",
+  "quizGoodJob": "Good job!",
+  "quizLeaderboard": "Local leaderboard",
+  "quizLeaderboardBody": "Anonymous and stored on this device only — no account needed.",
+  "quizLeaderboardEmpty": "Finish a quiz to appear on the leaderboard.",
+  "plTitle": "Study planner",
+  "plSubtitle": "Build a simple timetable with daily reminders",
+  "plAddSlot": "Add study slot",
+  "plSubject": "Subject",
+  "plDay": "Day",
+  "plTime": "Time",
+  "plEveryDay": "Every day",
+  "plCreate": "Create reminder",
+  "plEmpty": "No study slots yet",
+  "plEmptyBody": "Add your first slot and SriEdu will remind you at the right time, every week.",
+  "plRemindersOn": "Reminders on",
+  "plReminderBody": "Time to study {subject}",
+  "@plReminderBody": {
+    "placeholders": {
+      "subject": {
+        "type": "String"
+      }
+    }
+  },
+  "plReminderBodyGeneric": "Time for your study slot",
+  "plDeleteTitle": "Delete this slot?",
+  "plDeleteBody": "The reminder will also be removed from your device.",
+  "plPermissionDenied": "Notification permission was denied. Enable it in system settings to get reminders.",
+  "plSelectSubject": "Please pick a subject first",
+  "plSaved": "Reminder saved",
+  "plDeleted": "Reminder deleted",
+  "dayMonday": "Monday",
+  "dayTuesday": "Tuesday",
+  "dayWednesday": "Wednesday",
+  "dayThursday": "Thursday",
+  "dayFriday": "Friday",
+  "daySaturday": "Saturday",
+  "daySunday": "Sunday",
+  "libTitle": "My library",
+  "libTabDownloads": "Downloads",
+  "libTabFavorites": "Favorites",
+  "libTabHistory": "History",
+  "libStorage": "Storage used",
+  "libClearCache": "Clear cache",
+  "libClearCacheTitle": "Clear cached files?",
+  "libClearCacheBody": "Downloaded papers and cached previews will be deleted. Your favourites, streak and quiz results are kept.",
+  "libCacheCleared": "Cache cleared ({size} freed)",
+  "@libCacheCleared": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "libDownloadsEmpty": "No downloads yet",
+  "libDownloadsEmptyBody": "Papers you download for offline reading appear here.",
+  "libFavoritesEmpty": "No favourites yet",
+  "libFavoritesEmptyBody": "Tap the heart on any book or paper to save it here.",
+  "libHistoryEmpty": "Nothing studied yet",
+  "libHistoryEmptyBody": "Books and papers you open will be listed here so you can jump back in.",
+  "libRemovedFavorite": "Removed from favourites",
+  "libDeleted": "File deleted",
+  "libFilesCount": "{count, plural, =1{1 file} other{{count} files}}",
+  "@libFilesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "libDownloadNow": "Save for offline",
+  "libDownloading": "Downloading… {percent}%",
+  "@libDownloading": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "setTitle": "Settings",
+  "setLanguage": "Language",
+  "setAppearance": "Appearance",
+  "setThemeSystem": "Follow system",
+  "setThemeLight": "Light",
+  "setThemeDark": "Dark",
+  "setFontSize": "Font size",
+  "setFontSmall": "Small",
+  "setFontMedium": "Default",
+  "setFontLarge": "Large",
+  "setFontPreview": "The quick brown fox jumps over the lazy dog",
+  "setNotifications": "Notifications",
+  "setNotifReminders": "Study reminders",
+  "setNotifRemindersBody": "Daily notifications for your planner slots",
+  "setNotifNews": "Announcements",
+  "setNotifNewsBody": "New papers and question sets",
+  "setStudentName": "Your name",
+  "setStudentNameBody": "Used for the greeting on your home screen",
+  "setNameHint": "e.g. Kasun",
+  "setData": "Data & storage",
+  "setClearData": "Erase all app data",
+  "setClearDataBody": "Favourites, streak, quiz results, downloads and settings will be removed from this device.",
+  "setClearDataConfirm": "Erase everything",
+  "setDataCleared": "All app data erased",
+  "setAbout": "About",
+  "setVersion": "Version {version}",
+  "@setVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "setLicenses": "Open-source licences",
+  "setOfficialSources": "Official sources",
+  "setOfficialSourcesBody": "The content partners this app links to",
+  "setTimezone": "Time zone",
+  "setAboutBody": "SriEdu is an independent study companion. Textbooks and papers remain the property of their publishers and are opened from official sources.",
+  "setSaved": "Saved",
+  "streakLongest": "Longest",
+  "streakTodayDone": "Today's study is done",
+  "streakFreezesLeft": "{count, plural, =1{1 freeze left this week} other{{count} freezes left this week}}",
+  "@streakFreezesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streakFreezeUsed": "Streak freeze used",
+  "streakFreezeUnavailable": "You've already used this week's freeze",
+  "streakFreezeExplain": "One free skip every week, in case life gets in the way.",
+  "streakUseFreeze": "Use streak freeze",
+  "badgeEarnedOn": "Earned {date}",
+  "@badgeEarnedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "badgeFirstBook": "First page turned",
+  "badgeFirstBookDesc": "Opened your first textbook",
+  "badgeFirstQuiz": "First quiz done",
+  "badgeFirstQuizDesc": "Completed a practice quiz",
+  "badgeStreak7": "7-day streak",
+  "badgeStreak7Desc": "Studied 7 days in a row",
+  "badgeStreak30": "30-day streak",
+  "badgeStreak30Desc": "Studied 30 days in a row",
+  "badgeQuizMaster": "Quiz master",
+  "badgeQuizMasterDesc": "Scored 80% or more five times",
+  "badgeTenDownloads": "Collector",
+  "badgeTenDownloadsDesc": "Saved 10 papers for offline study",
+  "badgePlanner": "Planner pro",
+  "badgePlannerDesc": "Created your first study reminder",
+  "badgeNewUnlocked": "Badge unlocked: {name}",
+  "@badgeNewUnlocked": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pdfOpenOfficial": "Open official source",
+  "pdfPageOf": "Page {current} of {total}",
+  "@pdfPageOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "pdfNoOfflineCopy": "Not saved offline",
+  "pdfNoOfflineCopyBody": "This title opens from its official source. Save a copy first if you want to read it here without an internet connection.",
+  "pdfWebNotice": "In-app reading is available on Android and iOS",
+  "pdfWebNoticeBody": "On the web build, open the official source in a browser tab instead.",
+  "pdfResume": "Resumed at page {page}",
+  "@pdfResume": {
+    "placeholders": {
+      "page": {
+        "type": "int"
+      }
+    }
+  },
+  "errGeneric": "Something went wrong. Please try again.",
+  "errNetwork": "You appear to be offline. Showing saved content.",
+  "errNotFound": "We couldn't find that item.",
+  "errStorage": "Storage problem. Free up some space and retry.",
+  "errFileMissing": "The downloaded file is missing. Please download it again.",
+  "errFirebaseDisabled": "Cloud sync is off. Using content stored on this device.",
+  "errCatalogue": "Could not refresh the catalogue. Showing the last saved copy.",
+  "errOfficialOnly": "This title is published by an official body, so it opens in your browser instead of being saved in the app."
+}

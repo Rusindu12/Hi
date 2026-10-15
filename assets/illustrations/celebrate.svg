@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="200" height="160" role="img" aria-label="Badge unlocked">
+  <ellipse cx="100" cy="142" rx="60" ry="8" fill="#0F172A" opacity="0.06"/>
+  <path d="M76 74h48l-6 46a18 18 0 0 1-36 0z" fill="#FBBF24"/>
+  <path d="M76 70h48v10H76z" fill="#F97316"/>
+  <path d="M62 52c-6-12 2-22 12-16" stroke="#F97316" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M138 52c6-12-2-22-12-16" stroke="#F97316" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <rect x="94" y="96" width="12" height="14" rx="3" fill="#0B6470" opacity="0.5"/>
+  <circle cx="100" cy="44" r="18" fill="#FFFFFF" stroke="#FBBF24" stroke-width="5"/>
+  <path d="M100 34l3.4 7 7.6 1.1-5.5 5.4 1.3 7.5-6.8-3.6-6.8 3.6 1.3-7.5-5.5-5.4 7.6-1.1z" fill="#FBBF24"/>
+  <g fill="#7C3AED" opacity="0.85">
+    <circle cx="36" cy="34" r="4"/><circle cx="52" cy="18" r="3"/><circle cx="164" cy="38" r="4"/>
+  </g>
+  <g fill="#2563EB" opacity="0.75">
+    <rect x="28" y="66" width="8" height="8" rx="2" transform="rotate(24 32 70)"/>
+    <rect x="160" y="78" width="7" height="7" rx="2" transform="rotate(-18 163 81)"/>
+  </g>
+  <g fill="#F97316" opacity="0.8">
+    <rect x="46" y="96" width="6" height="6" rx="2"/><rect x="146" y="106" width="7" height="7" rx="2"/>
+  </g>
+</svg>

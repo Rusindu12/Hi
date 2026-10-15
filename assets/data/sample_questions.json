@@ -1,0 +1,806 @@
+{
+ "version": 1,
+ "generatedBy": "tools/generate_seed_assets.py",
+ "note": "Bank key format is subject_examType[_year]. The repository looks for an exact-year bank first, then a subject-wide bank, then Firestore.",
+ "banks": [
+  {
+   "key": "mathematics_ol_2019",
+   "subject": "mathematics",
+   "examType": "ol",
+   "medium": "si",
+   "year": 2019,
+   "questions": [
+    {
+     "id": "math-2019-01",
+     "questionText": {
+      "en": "What is 15% of 240?",
+      "si": "240 හි 15% කීයද?",
+      "ta": "240 இன் 15% என்ன?"
+     },
+     "options": [
+      {
+       "en": "24",
+       "si": "24",
+       "ta": "24"
+      },
+      {
+       "en": "36",
+       "si": "36",
+       "ta": "36"
+      },
+      {
+       "en": "32",
+       "si": "32",
+       "ta": "32"
+      },
+      {
+       "en": "48",
+       "si": "48",
+       "ta": "48"
+      }
+     ],
+     "correctAnswer": 1,
+     "explanation": {
+      "en": "15% = 15/100, and 240 x 15 / 100 = 36.",
+      "si": "15% = 15/100, එවිට 240 x 15 / 100 = 36.",
+      "ta": "15% = 15/100, எனவே 240 x 15 / 100 = 36."
+     },
+     "subject": "mathematics",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "math-2019-02",
+     "questionText": {
+      "en": "Simplify: 3(2x - 4) + 5x",
+      "si": "සරල කරන්න: 3(2x - 4) + 5x",
+      "ta": "எளிமைப்படுத்துக: 3(2x - 4) + 5x"
+     },
+     "options": [
+      {
+       "en": "11x - 12",
+       "si": "11x - 12",
+       "ta": "11x - 12"
+      },
+      {
+       "en": "6x - 4",
+       "si": "6x - 4",
+       "ta": "6x - 4"
+      },
+      {
+       "en": "11x - 4",
+       "si": "11x - 4",
+       "ta": "11x - 4"
+      },
+      {
+       "en": "x - 12",
+       "si": "x - 12",
+       "ta": "x - 12"
+      }
+     ],
+     "correctAnswer": 0,
+     "explanation": {
+      "en": "Expand: 6x - 12 + 5x = 11x - 12.",
+      "si": "විස්තර කරන්න: 6x - 12 + 5x = 11x - 12.",
+      "ta": "விரிவாக்குக: 6x - 12 + 5x = 11x - 12."
+     },
+     "subject": "mathematics",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "math-2019-03",
+     "questionText": {
+      "en": "The area of a circle with radius 7 cm is (take pi = 22/7):",
+      "si": "අරය 7 cm වූ වෘත්තයක වර්ගඵලය (pi = 22/7 ලෙස ගන්න):",
+      "ta": "ஆரை 7 cm உள்ள வட்டத்தின் பரப்பளவு (pi = 22/7 எனக் கொள்க):"
+     },
+     "options": [
+      {
+       "en": "154 cm²",
+       "si": "154 cm²",
+       "ta": "154 cm²"
+      },
+      {
+       "en": "44 cm²",
+       "si": "44 cm²",
+       "ta": "44 cm²"
+      },
+      {
+       "en": "49 cm²",
+       "si": "49 cm²",
+       "ta": "49 cm²"
+      },
+      {
+       "en": "308 cm²",
+       "si": "308 cm²",
+       "ta": "308 cm²"
+      }
+     ],
+     "correctAnswer": 0,
+     "explanation": {
+      "en": "A = pi r² = (22/7) x 49 = 154 cm².",
+      "si": "A = pi r² = (22/7) x 49 = 154 cm².",
+      "ta": "A = pi r² = (22/7) x 49 = 154 cm²."
+     },
+     "subject": "mathematics",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "math-2019-04",
+     "questionText": {
+      "en": "If x + 5 = 12, then 3x = ?",
+      "si": "x + 5 = 12 නම්, 3x = ?",
+      "ta": "x + 5 = 12 எனில், 3x = ?"
+     },
+     "options": [
+      {
+       "en": "21",
+       "si": "21",
+       "ta": "21"
+      },
+      {
+       "en": "15",
+       "si": "15",
+       "ta": "15"
+      },
+      {
+       "en": "27",
+       "si": "27",
+       "ta": "27"
+      },
+      {
+       "en": "36",
+       "si": "36",
+       "ta": "36"
+      }
+     ],
+     "correctAnswer": 0,
+     "explanation": {
+      "en": "x = 7, so 3x = 21.",
+      "si": "x = 7, එවිට 3x = 21.",
+      "ta": "x = 7, எனவே 3x = 21."
+     },
+     "subject": "mathematics",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "math-2019-05",
+     "questionText": {
+      "en": "A shirt costs Rs. 1800 after a 10% discount. What was the original price?",
+      "si": "10% වට්ටමකින් පසු කමිසයක මිල රු. 1800 කි. මුල් මිල කීයද?",
+      "ta": "10% தள்ளுபடிக்குப் பின் ஒரு சட்டையின் விலை ரூ. 1800. மூல விலை என்ன?"
+     },
+     "options": [
+      {
+       "en": "Rs. 1980",
+       "si": "රු. 1980",
+       "ta": "ரூ. 1980"
+      },
+      {
+       "en": "Rs. 2000",
+       "si": "රු. 2000",
+       "ta": "ரூ. 2000"
+      },
+      {
+       "en": "Rs. 1900",
+       "si": "රු. 1900",
+       "ta": "ரூ. 1900"
+      },
+      {
+       "en": "Rs. 2200",
+       "si": "රු. 2200",
+       "ta": "ரூ. 2200"
+      }
+     ],
+     "correctAnswer": 1,
+     "explanation": {
+      "en": "1800 = 90% of the original, so original = 1800 x 100 / 90 = 2000.",
+      "si": "1800 යනු මුල් මිලෙන් 90% කි. එවිට මුල් මිල = 1800 x 100 / 90 = 2000.",
+      "ta": "1800 என்பது மூல விலையின் 90%. மூல விலை = 1800 x 100 / 90 = 2000."
+     },
+     "subject": "mathematics",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "math-2019-06",
+     "questionText": {
+      "en": "Which of these is a prime number?",
+      "si": "මේවායින් ප්‍රථමක සංඛ්‍යාව කුමක්ද?",
+      "ta": "இவற்றில் பகா எண் எது?"
+     },
+     "options": [
+      {
+       "en": "21",
+       "si": "21",
+       "ta": "21"
+      },
+      {
+       "en": "27",
+       "si": "27",
+       "ta": "27"
+      },
+      {
+       "en": "29",
+       "si": "29",
+       "ta": "29"
+      },
+      {
+       "en": "33",
+       "si": "33",
+       "ta": "33"
+      }
+     ],
+     "correctAnswer": 2,
+     "explanation": {
+      "en": "29 has no divisors other than 1 and itself. 21 = 3x7, 27 = 3x9, 33 = 3x11.",
+      "si": "29 හට 1 සහ එයම හැර බෙදුම්කරුවන් නොමැත. 21 = 3x7, 27 = 3x9, 33 = 3x11.",
+      "ta": "29 க்கு 1 மற்றும் அதே தவிர வேறு வகுப்பிகள் இல்லை. 21 = 3x7, 27 = 3x9, 33 = 3x11."
+     },
+     "subject": "mathematics",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "math-2019-07",
+     "questionText": {
+      "en": "The sum of the interior angles of a triangle is:",
+      "si": "ත්‍රිකෝණයක අභ්‍යන්තර කෝණවල එකතුව:",
+      "ta": "ஒரு முக்கோணத்தின் உள் கோணங்களின் கூட்டுத்தொகை:"
+     },
+     "options": [
+      {
+       "en": "90°",
+       "si": "90°",
+       "ta": "90°"
+      },
+      {
+       "en": "180°",
+       "si": "180°",
+       "ta": "180°"
+      },
+      {
+       "en": "270°",
+       "si": "270°",
+       "ta": "270°"
+      },
+      {
+       "en": "360°",
+       "si": "360°",
+       "ta": "360°"
+      }
+     ],
+     "correctAnswer": 1,
+     "explanation": {
+      "en": "Every triangle's interior angles add up to 180°.",
+      "si": "සෑම ත්‍රිකෝණයකම අභ්‍යන්තර කෝණවල එකතුව 180° කි.",
+      "ta": "எல்லா முக்கோணங்களின் உள் கோணங்களின் கூட்டுத்தொகை 180°."
+     },
+     "subject": "mathematics",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "math-2019-08",
+     "questionText": {
+      "en": "What is the value of 2³ + 3²?",
+      "si": "2³ + 3² හි අගය කීයද?",
+      "ta": "2³ + 3² இன் பெறுமதி என்ன?"
+     },
+     "options": [
+      {
+       "en": "17",
+       "si": "17",
+       "ta": "17"
+      },
+      {
+       "en": "13",
+       "si": "13",
+       "ta": "13"
+      },
+      {
+       "en": "36",
+       "si": "36",
+       "ta": "36"
+      },
+      {
+       "en": "25",
+       "si": "25",
+       "ta": "25"
+      }
+     ],
+     "correctAnswer": 0,
+     "explanation": {
+      "en": "2³ = 8 and 3² = 9, so the sum is 17.",
+      "si": "2³ = 8 සහ 3² = 9, එවිට එකතුව 17 කි.",
+      "ta": "2³ = 8, 3² = 9, எனவே கூட்டுத்தொகை 17."
+     },
+     "subject": "mathematics",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "math-2019-09",
+     "questionText": {
+      "en": "In a class of 40 students, 60% are girls. How many boys are there?",
+      "si": "සිසුන් 40 ක පන්තියක 60% ගැහැණු ළමයින්ය. පිරිමි ළමයින් කී දෙනෙක්ද?",
+      "ta": "40 மாணவர்கள் உள்ள வகுப்பில் 60% பெண்கள். ஆண்கள் எத்தனை பேர்?"
+     },
+     "options": [
+      {
+       "en": "24",
+       "si": "24",
+       "ta": "24"
+      },
+      {
+       "en": "16",
+       "si": "16",
+       "ta": "16"
+      },
+      {
+       "en": "20",
+       "si": "20",
+       "ta": "20"
+      },
+      {
+       "en": "18",
+       "si": "18",
+       "ta": "18"
+      }
+     ],
+     "correctAnswer": 1,
+     "explanation": {
+      "en": "40% of 40 = 16 boys (60% of 40 = 24 girls).",
+      "si": "40 න් 40% = පිරිමි 16 කි (40 න් 60% = ගැහැණු 24 කි).",
+      "ta": "40 இல் 40% = 16 ஆண்கள் (40 இல் 60% = 24 பெண்கள்)."
+     },
+     "subject": "mathematics",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "math-2019-10",
+     "questionText": {
+      "en": "A train travels 180 km in 3 hours. What is its average speed?",
+      "si": "දුම්රියක් පැය 3 කින් කි.මී. 180 ක් ගමන් කරයි. සාමාන්‍ය වේගය කීයද?",
+      "ta": "ஒரு ரயில் 3 மணித்தியாலங்களில் 180 கி.மீ. செல்கிறது. சராசரி வேகம் என்ன?"
+     },
+     "options": [
+      {
+       "en": "45 km/h",
+       "si": "පැයට කි.මී. 45",
+       "ta": "ம.மீ/மணி 45"
+      },
+      {
+       "en": "60 km/h",
+       "si": "පැයට කි.මී. 60",
+       "ta": "ம.மீ/மணி 60"
+      },
+      {
+       "en": "54 km/h",
+       "si": "පැයට කි.මී. 54",
+       "ta": "ம.மீ/மணி 54"
+      },
+      {
+       "en": "90 km/h",
+       "si": "පැයට කි.මී. 90",
+       "ta": "ம.மீ/மணி 90"
+      }
+     ],
+     "correctAnswer": 1,
+     "explanation": {
+      "en": "Speed = distance / time = 180 / 3 = 60 km/h.",
+      "si": "වේගය = දුර / කාලය = 180 / 3 = 60 km/h.",
+      "ta": "வேகம் = தூரம் / நேரம் = 180 / 3 = 60 km/h."
+     },
+     "subject": "mathematics",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    }
+   ]
+  },
+  {
+   "key": "science_ol_2019",
+   "subject": "science",
+   "examType": "ol",
+   "medium": "si",
+   "year": 2019,
+   "questions": [
+    {
+     "id": "sci-2019-01",
+     "questionText": {
+      "en": "Which gas do plants absorb during photosynthesis?",
+      "si": "ප්‍රභාසංශ්ලේෂණයේදී ශාක අවශෝෂණය කරන වායුව කුමක්ද?",
+      "ta": "ஒளிச்சேர்க்கையின் போது தாவரங்கள் உட்கொள்ளும் வாயு எது?"
+     },
+     "options": [
+      {
+       "en": "Oxygen",
+       "si": "ඔක්සිජන්",
+       "ta": "ஆக்சிஜன்"
+      },
+      {
+       "en": "Carbon dioxide",
+       "si": "කාබන් ඩයොක්සයිඩ්",
+       "ta": "கரிம வாயு"
+      },
+      {
+       "en": "Nitrogen",
+       "si": "නයිට්‍රජන්",
+       "ta": "நைட்ரஜன்"
+      },
+      {
+       "en": "Hydrogen",
+       "si": "හයිඩ්‍රජන්",
+       "ta": "ஹைட்ரஜன்"
+      }
+     ],
+     "correctAnswer": 1,
+     "explanation": {
+      "en": "Plants take in CO2 and release O2 during photosynthesis.",
+      "si": "ප්‍රභාසංශ්ලේෂණයේදී ශාක CO2 ලබාගෙන O2 නිකුත් කරයි.",
+      "ta": "ஒளிச்சேர்க்கையில் தாவரங்கள் CO2 உட்கொண்டு O2 வெளியிடும்."
+     },
+     "subject": "science",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "sci-2019-02",
+     "questionText": {
+      "en": "The SI unit of force is:",
+      "si": "බලයේ SI ඒකකය:",
+      "ta": "விசையின் SI அலகு:"
+     },
+     "options": [
+      {
+       "en": "Joule",
+       "si": "ජූල්",
+       "ta": "ஜூல்"
+      },
+      {
+       "en": "Watt",
+       "si": "වොට්",
+       "ta": "வாட்"
+      },
+      {
+       "en": "Newton",
+       "si": "නිව්ටන්",
+       "ta": "நியூட்டன்"
+      },
+      {
+       "en": "Pascal",
+       "si": "පැස්කල්",
+       "ta": "பாஸ்கல்"
+      }
+     ],
+     "correctAnswer": 2,
+     "explanation": {
+      "en": "Force is measured in newtons (kg·m/s²).",
+      "si": "බලය නිව්ටන් වලින් මනිනු ලැබේ (kg·m/s²).",
+      "ta": "விசை நியூட்டனில் அளவிடப்படுகிறது (kg·m/s²)."
+     },
+     "subject": "science",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "sci-2019-03",
+     "questionText": {
+      "en": "Which part of the human body produces insulin?",
+      "si": "මිනිස් සිරුරේ ඉන්සියුලින් නිපදවන අවයවය කුමක්ද?",
+      "ta": "மனித உடலில் இன்சுலின் உற்பத்தி செய்யும் உறுப்பு எது?"
+     },
+     "options": [
+      {
+       "en": "Liver",
+       "si": "අක්මාව",
+       "ta": "கல்லீரல்"
+      },
+      {
+       "en": "Pancreas",
+       "si": "අග්න්‍යාශය",
+       "ta": "கணையம்"
+      },
+      {
+       "en": "Kidney",
+       "si": "වකුගඩුව",
+       "ta": "சிறுநீரகம்"
+      },
+      {
+       "en": "Spleen",
+       "si": "ප්ලීහාව",
+       "ta": "மண்ணீரல்"
+      }
+     ],
+     "correctAnswer": 1,
+     "explanation": {
+      "en": "The beta cells of the pancreas produce insulin.",
+      "si": "අග්න්‍යාශයේ බීටා සෛල ඉන්සියුලින් නිපදවයි.",
+      "ta": "கணையத்தின் பீட்டா செல்கள் இன்சுலின் உற்பத்தி செய்கின்றன."
+     },
+     "subject": "science",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "sci-2019-04",
+     "questionText": {
+      "en": "Water boils at what temperature at sea level?",
+      "si": "මුහුදු මට්ටමේදී ජලය උනු වන උෂ්ණත්වය කුමක්ද?",
+      "ta": "கடல் மட்டத்தில் நீர் எந்த வெப்பநிலையில் கொதிக்கும்?"
+     },
+     "options": [
+      {
+       "en": "90 °C",
+       "si": "90 °C",
+       "ta": "90 °C"
+      },
+      {
+       "en": "100 °C",
+       "si": "100 °C",
+       "ta": "100 °C"
+      },
+      {
+       "en": "110 °C",
+       "si": "110 °C",
+       "ta": "110 °C"
+      },
+      {
+       "en": "80 °C",
+       "si": "80 °C",
+       "ta": "80 °C"
+      }
+     ],
+     "correctAnswer": 1,
+     "explanation": {
+      "en": "At standard atmospheric pressure water boils at 100 °C.",
+      "si": "සම්මත වායු පීඩනයේදී ජලය 100 °C දී උනු වේ.",
+      "ta": "நிலையான வளிமண்டல அழுத்தத்தில் நீர் 100 °C இல் கொதிக்கும்."
+     },
+     "subject": "science",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "sci-2019-05",
+     "questionText": {
+      "en": "Which of the following is a renewable energy source?",
+      "si": "පහත සඳහන් දේවලින් පුනර්ජනනීය බලශක්ති මූලාශ්‍රය කුමක්ද?",
+      "ta": "கீழ்வற்றில் புதுப்பிக்கத்தக்க எரிசக்தி மூலம் எது?"
+     },
+     "options": [
+      {
+       "en": "Coal",
+       "si": "ගල් අඟුරු",
+       "ta": "நிலக்கரி"
+      },
+      {
+       "en": "Solar",
+       "si": "සූර්ය බලය",
+       "ta": "சூரிய சக்தி"
+      },
+      {
+       "en": "Diesel",
+       "si": "ඩීසල්",
+       "ta": "டீசல்"
+      },
+      {
+       "en": "Natural gas",
+       "si": "ස්වාභාවික වායු",
+       "ta": "இயற்கை வாயு"
+      }
+     ],
+     "correctAnswer": 1,
+     "explanation": {
+      "en": "Sunlight is naturally replenished; fossil fuels are not.",
+      "si": "සූර්යාලෝකය ස්වාභාවිකව නැවත පිරවේ; ෆොසිල ඉන්ධන නොවේ.",
+      "ta": "சூரிய ஒளி இயற்கையாக மீளும்; புதைபடிவ எரிபொருட்கள் அல்ல."
+     },
+     "subject": "science",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "sci-2019-06",
+     "questionText": {
+      "en": "The pH value of a neutral solution is:",
+      "si": "උදාසීන ද්‍රාවණයක pH අගය:",
+      "ta": "நடுநிலை கரைசலின் pH பெறுமதி:"
+     },
+     "options": [
+      {
+       "en": "0",
+       "si": "0",
+       "ta": "0"
+      },
+      {
+       "en": "7",
+       "si": "7",
+       "ta": "7"
+      },
+      {
+       "en": "10",
+       "si": "10",
+       "ta": "10"
+      },
+      {
+       "en": "14",
+       "si": "14",
+       "ta": "14"
+      }
+     ],
+     "correctAnswer": 1,
+     "explanation": {
+      "en": "Neutral solutions such as pure water have pH 7.",
+      "si": "පිරිසිදු ජලය වැනි උදාසීන ද්‍රාවණවල pH අගය 7 කි.",
+      "ta": "சுத்த நீர் போன்ற நடுநிலை கரைசல்களின் pH 7."
+     },
+     "subject": "science",
+     "examType": "ol",
+     "medium": "si",
+     "year": 2019,
+     "grade": 11
+    }
+   ]
+  },
+  {
+   "key": "english_ol_2019",
+   "subject": "english",
+   "examType": "ol",
+   "medium": "en",
+   "year": 2019,
+   "questions": [
+    {
+     "id": "eng-2019-01",
+     "questionText": {
+      "en": "Choose the correct sentence:"
+     },
+     "options": [
+      {
+       "en": "He go to school daily."
+      },
+      {
+       "en": "He goes to school daily."
+      },
+      {
+       "en": "He going to school daily."
+      },
+      {
+       "en": "He gone to school daily."
+      }
+     ],
+     "correctAnswer": 1,
+     "explanation": {
+      "en": "'He' takes 'goes' in the simple present."
+     },
+     "subject": "english",
+     "examType": "ol",
+     "medium": "en",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "eng-2019-02",
+     "questionText": {
+      "en": "Pick the antonym of 'ancient':"
+     },
+     "options": [
+      {
+       "en": "old"
+      },
+      {
+       "en": "modern"
+      },
+      {
+       "en": "past"
+      },
+      {
+       "en": "historic"
+      }
+     ],
+     "correctAnswer": 1,
+     "explanation": {
+      "en": "'Modern' is the opposite of 'ancient'."
+     },
+     "subject": "english",
+     "examType": "ol",
+     "medium": "en",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "eng-2019-03",
+     "questionText": {
+      "en": "Fill in the blank: She has been studying ___ two hours."
+     },
+     "options": [
+      {
+       "en": "since"
+      },
+      {
+       "en": "for"
+      },
+      {
+       "en": "from"
+      },
+      {
+       "en": "during"
+      }
+     ],
+     "correctAnswer": 1,
+     "explanation": {
+      "en": "'For' is used with a duration; 'since' with a point in time."
+     },
+     "subject": "english",
+     "examType": "ol",
+     "medium": "en",
+     "year": 2019,
+     "grade": 11
+    },
+    {
+     "id": "eng-2019-04",
+     "questionText": {
+      "en": "Choose the correct plural of 'child':"
+     },
+     "options": [
+      {
+       "en": "childs"
+      },
+      {
+       "en": "childes"
+      },
+      {
+       "en": "children"
+      },
+      {
+       "en": "child"
+      }
+     ],
+     "correctAnswer": 2,
+     "explanation": {
+      "en": "'Child' has the irregular plural 'children'."
+     },
+     "subject": "english",
+     "examType": "ol",
+     "medium": "en",
+     "year": 2019,
+     "grade": 11
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+# ---- Flutter / Dart ----
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+.flutter-devtools/
+**/*.g.dart
+lib/l10n/generated/
+l10n_untranslated.json
+
+# ---- IDE ----
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+
+# ---- Android ----
+android/.gradle/
+android/local.properties
+android/app/google-services.json
+android/key.properties
+android/app/upload-keystore.jks
+android/app/*.jks
+android/app/*.keystore
+android/captures/
+.cxx/
+key.properties
+
+# ---- Secrets / env ----
+.env
+*.env
+secrets/
+
+# ---- Generated store assets (regenerate with tools/generate_store_assets.py) ----
+store_assets/
+
+# Keep the signed-release output out of git (it is large and re-buildable).
+*.apk
+*.aab

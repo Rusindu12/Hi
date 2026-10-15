@@ -1,0 +1,39 @@
+// Gradle settings for the SriEdu Android module.
+//
+// NOTE: gradle/wrapper/* (the wrapper jar and properties) and local.properties
+// are intentionally NOT committed — they are machine/version specific. Generate
+// them once with:
+//
+//     flutter create --platforms=android .
+//
+// which fills in any missing generated file without overwriting the ones in this
+// repository (AndroidManifest.xml, build.gradle, res/*, MainActivity.kt).
+pluginManagement {
+    def flutterSdkPath = {
+        def properties = new Properties()
+        file("local.properties").withInputStream { properties.load(it) }
+        def flutterSdkPath = properties.getProperty("flutter.sdk")
+        assert flutterSdkPath != null, "flutter.sdk not set in local.properties"
+        return flutterSdkPath
+    }()
+
+    includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
+
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+plugins {
+    id "dev.flutter.flutter-plugin-loader" version "1.0.0"
+    id "com.android.application" version "8.3.2" apply false
+    id "org.jetbrains.kotlin.android" version "1.9.22" apply false
+    // Comment these two out to build without Firebase (the app runs fully
+    // offline by default; see USE_FIREBASE in lib/core/constants/app_config.dart).
+    id "com.google.gms.google-services" version "4.4.1" apply false
+    id "com.google.firebase.crashlytics" version "3.0.2" apply false
+}
+
+include ":app"

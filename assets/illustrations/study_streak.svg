@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200" role="img" aria-label="Studying with a streak">
+  <ellipse cx="120" cy="180" rx="92" ry="10" fill="#0F172A" opacity="0.07"/>
+  <rect x="30" y="140" width="180" height="12" rx="6" fill="#0B6470"/>
+  <rect x="44" y="152" width="10" height="26" rx="3" fill="#0B6470" opacity="0.7"/>
+  <rect x="186" y="152" width="10" height="26" rx="3" fill="#0B6470" opacity="0.7"/>
+  <path d="M46 140l34-58 44 0 0 58z" fill="#FFFFFF" stroke="#D8F0F2" stroke-width="2"/>
+  <rect x="56" y="96" width="26" height="5" rx="2.5" fill="#94A3B8"/>
+  <rect x="56" y="108" width="34" height="5" rx="2.5" fill="#CBD5E1"/>
+  <circle cx="150" cy="92" r="17" fill="#F5C6A5"/>
+  <path d="M133 90c0-12 8-18 17-18s17 6 17 18c-5-4-11-6-17-6s-12 2-17 6z" fill="#0F172A"/>
+  <path d="M150 109c-14 0-24 9-26 22v9h52v-9c-2-13-12-22-26-22z" fill="#2563EB"/>
+  <path d="M118 140c8-4 18-4 26 0" stroke="#7C3AED" stroke-width="3" fill="none" opacity="0.5"/>
+  <g transform="translate(200,74)">
+    <path d="M0 -22c9 12 14 18 14 26A14 14 0 0 1 -14 4c0-8 5-14 14-26z" fill="#F97316"/>
+    <path d="M0 -8c5 8 8 11 8 16A8 8 0 0 1 -8 8c0-5 3-8 8-16z" fill="#FBBF24"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Launcher label. The in-app name comes from ARB files; this is only what
+         the system launcher and Settings show, so it localises with the OS. -->
+    <string name="app_name">SriEdu</string>
+    <string name="notification_channel_reminders">Study reminders</string>
+    <string name="notification_channel_reminders_desc">Daily reminders for your study planner slots</string>
+    <string name="notification_channel_announcements">Announcements</string>
+    <string name="notification_channel_announcements_desc">New papers and question sets</string>
+</resources>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="200" height="160" role="img" aria-label="No study slots">
+  <ellipse cx="100" cy="140" rx="66" ry="8" fill="#0F172A" opacity="0.06"/>
+  <rect x="44" y="42" width="112" height="88" rx="12" fill="#FFFFFF" stroke="#D8F0F2" stroke-width="2"/>
+  <rect x="44" y="42" width="112" height="20" rx="12" fill="#14919B"/>
+  <rect x="70" y="32" width="8" height="20" rx="4" fill="#0B6470"/>
+  <rect x="122" y="32" width="8" height="20" rx="4" fill="#0B6470"/>
+  <g fill="#D8F0F2">
+    <rect x="58" y="74" width="16" height="12" rx="3"/><rect x="82" y="74" width="16" height="12" rx="3"/>
+    <rect x="106" y="74" width="16" height="12" rx="3"/><rect x="130" y="74" width="16" height="12" rx="3"/>
+    <rect x="58" y="96" width="16" height="12" rx="3"/><rect x="82" y="96" width="16" height="12" rx="3"/>
+  </g>
+  <circle cx="152" cy="112" r="22" fill="#FBBF24"/>
+  <path d="M152 100v13l9 6" stroke="#0B6470" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M152 96c3-6 9-6 9 0 0 5-9 5-9 0z" fill="#F97316"/>
+</svg>

@@ -1,0 +1,138 @@
+// SriEdu — Android module build.
+//
+// Key decisions for the Play Store submission:
+//   * minSdk 21 (Android 5.0) as specified. Firebase Auth-free usage and
+//     google_mobile_ads 5.x both support 21.
+//   * R8 + resource shrinking ON for release, because the 30 MB budget is tight
+//     once Firebase is enabled. proguard-rules.pro keeps pdfrx's native hooks.
+//   * Play Core deferred components/language splits: `bundles` language split is
+//     disabled — Sinhala/Tamil are delivered in-app as bundled fonts, and the
+//     ARB strings are compiled into libapp.so, so a language split would simply
+//     break the UI for those users.
+//   * ABI filters default to arm64-v8a + armeabi-v7a (no x86 in the store build).
+
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    // Firebase plugins. Comment out BOTH if you are shipping without Firebase
+    // (the app runs fully offline by default — see USE_FIREBASE in AppConfig).
+    id "com.google.gms.google-services"
+    id "com.google.firebase.crashlytics"
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file("local.properties")
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader("UTF-8") { reader -> localProperties.load(reader) }
+}
+
+def flutterVersionCode = localProperties.getProperty("flutter.versionCode") ?: "1"
+def flutterVersionName = localProperties.getProperty("flutter.versionName") ?: "1.0.0"
+
+// Release signing is read from android/key.properties, which is git-ignored.
+// Build with `flutter build appbundle --release` after creating it (see
+// docs/RELEASE_CHECKLIST.md). Without the file the release build falls back to
+// debug signing so CI can still compile.
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file("key.properties")
+if (keystorePropertiesFile.exists()) {
+    keystorePropertiesFile.withReader("UTF-8") { reader -> keystoreProperties.load(reader) }
+}
+
+android {
+    namespace = "lk.sriedu.app"
+    compileSdk = 34
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+        // Required by flutter_local_notifications and several Firebase plugins.
+        coreLibraryDesugaringEnabled = true
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    defaultConfig {
+        applicationId "lk.sriedu.app"
+        minSdk = 21
+        targetSdk = 34
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+
+        // Play Store language split OFF: our localisations are compiled into the
+        // Dart snapshot and the fonts are bundled, so a per-language split would
+        // strip Sinhala/Tamil resources from the APK a Sinhala user downloads.
+        bundle {
+            language {
+                enableSplit = false
+            }
+            density {
+                enableSplit = true
+            }
+            abi {
+                enableSplit = true
+            }
+        }
+    }
+
+    signingConfigs {
+        release {
+            if (keystorePropertiesFile.exists()) {
+                keyAlias = keystoreProperties["keyAlias"]
+                keyPassword = keystoreProperties["keyPassword"]
+                storeFile = keystoreProperties["storeFile"] ? file(keystoreProperties["storeFile"]) : null
+                storePassword = keystoreProperties["storePassword"]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig = keystorePropertiesFile.exists()
+                ? signingConfigs.release
+                : signingConfigs.debug
+            minifyEnabled = true
+            shrinkResources = true
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+            // PNG crunching keeps the launcher icon + illustration budget small.
+            crunchPngs = true
+        }
+        debug {
+            applicationIdSuffix = ".debug"
+            versionNameSuffix = "-debug"
+            // Keep the debug build installable side by side with a release build,
+            // which is what you want when a tester reports a bug.
+        }
+        profile {
+            initWith debug
+            applicationIdSuffix = ".profile"
+        }
+    }
+
+    // Drop unused architectures from the release APK (the AAB is split anyway).
+    packagingOptions {
+        resources {
+            excludes += ["META-INF/DEPENDENCIES", "META-INF/LICENSE*", "META-INF/NOTICE*"]
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    coreLibraryDesugaring "com.android.tools:desugar_jdk_libs:2.0.4"
+
+    // Firebase BoM keeps the Play Services versions consistent. Comment out
+    // together with the two Firebase Gradle plugins above if shipping without
+    // Firebase.
+    implementation platform("com.google.firebase:firebase-bom:33.1.2")
+    implementation "com.google.firebase:firebase-analytics"
+    implementation "com.google.firebase:firebase-crashlytics"
+    implementation "com.google.firebase:firebase-messaging"
+}

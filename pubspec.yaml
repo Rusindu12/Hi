@@ -1,0 +1,98 @@
+name: sriedu
+description: "SriEdu - all-in-one study companion for Sri Lankan students. Textbooks, past papers, quizzes, streaks and study planning in one app."
+publish_to: "none"
+
+# versionName+versionCode. Bump both for every Play Store upload.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  # 3.24 is the floor because AppShell uses PopScope.onPopInvokedWithResult
+  # (added in 3.24; it replaces onPopInvoked). Everything else in this project
+  # compiles on 3.19+, so lowering this floor only needs that one callback swap.
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # ---- State management (ChangeNotifier + provider, no codegen) ----
+  provider: ^6.1.2
+
+  # ---- Local storage ----
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.2
+
+  # ---- PDF reading (Sinhala/Tamil shaping via HarfBuzz in pdfrx) ----
+  pdfrx: ^1.0.0
+
+  # ---- Networking ----
+  dio: ^5.4.0
+  url_launcher: ^6.2.5
+
+  # ---- Notifications (study planner reminders) ----
+  flutter_local_notifications: ^17.0.0
+  timezone: ^0.9.2
+
+  # ---- Illustrations (tiny hand-written SVGs, no raster assets) ----
+  flutter_svg: ^2.0.10
+
+  # ---- Ads (banner on list screens only; see AdGate) ----
+  google_mobile_ads: ^5.0.0
+
+  # ---- Firebase (activates only when USE_FIREBASE=true) ----
+  # These majors form the Firebase 3.x/5.x generation (Flutter 3.22-3.29).
+  # On a newer Flutter, run: flutter pub upgrade --major-versions
+  firebase_core: ^3.0.0
+  cloud_firestore: ^5.0.0
+  firebase_storage: ^12.0.0
+  firebase_messaging: ^15.0.0
+  firebase_analytics: ^11.0.0
+  firebase_crashlytics: ^4.0.0
+
+  # Intl version is pinned by flutter_localizations; 'any' avoids conflicts.
+  intl: any
+
+  package_info_plus: ^8.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - assets/data/
+    - assets/illustrations/
+    - assets/legal/
+
+  fonts:
+    # SIL Open Font License 1.1 - see assets/fonts/OFL-*.txt and assets/legal/LICENSES.txt
+    # Variable fonts ([wdth,wght]); the same file is registered for each weight so
+    # Flutter can resolve wght 400-700 without shipping four static instances.
+    - family: NotoSansSinhala
+      fonts:
+        - asset: assets/fonts/NotoSansSinhala-Variable.ttf
+          weight: 400
+        - asset: assets/fonts/NotoSansSinhala-Variable.ttf
+          weight: 500
+        - asset: assets/fonts/NotoSansSinhala-Variable.ttf
+          weight: 600
+        - asset: assets/fonts/NotoSansSinhala-Variable.ttf
+          weight: 700
+    - family: NotoSansTamil
+      fonts:
+        - asset: assets/fonts/NotoSansTamil-Variable.ttf
+          weight: 400
+        - asset: assets/fonts/NotoSansTamil-Variable.ttf
+          weight: 500
+        - asset: assets/fonts/NotoSansTamil-Variable.ttf
+          weight: 600
+        - asset: assets/fonts/NotoSansTamil-Variable.ttf
+          weight: 700

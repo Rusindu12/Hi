@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200" role="img" aria-label="Textbooks">
+  <ellipse cx="120" cy="178" rx="86" ry="10" fill="#0F172A" opacity="0.07"/>
+  <rect x="42" y="132" width="156" height="30" rx="7" fill="#2563EB"/>
+  <rect x="42" y="132" width="156" height="30" rx="7" fill="#0F172A" opacity="0.08"/>
+  <rect x="52" y="103" width="136" height="30" rx="7" fill="#14919B"/>
+  <rect x="62" y="74" width="116" height="30" rx="7" fill="#7C3AED" opacity="0.85"/>
+  <rect x="46" y="136" width="10" height="22" rx="2" fill="#FBBF24"/>
+  <rect x="150" y="107" width="26" height="6" rx="3" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="150" y="136" width="34" height="6" rx="3" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="146" y="78" width="24" height="6" rx="3" fill="#FFFFFF" opacity="0.8"/>
+  <path d="M78 60l48-30 48 30z" fill="#FBBF24" opacity="0.9"/>
+  <path d="M86 60l40-25 40 25z" fill="#F97316" opacity="0.85"/>
+</svg>

@@ -1,0 +1,13 @@
+# Copy to android/key.properties and fill in. NEVER commit key.properties or the
+# keystore itself (both are in .gitignore).
+#
+# Create the keystore once, and back it up somewhere you will still have in two
+# years — losing it means you can never update the app on Play again:
+#
+#   keytool -genkeypair -v -keystore ~/sriedu-upload.jks \
+#     -keyalg RSA -keysize 4096 -validity 10000 -alias upload
+#
+storePassword=REPLACE_ME
+keyPassword=REPLACE_ME
+keyAlias=upload
+storeFile=/absolute/path/to/sriedu-upload.jks

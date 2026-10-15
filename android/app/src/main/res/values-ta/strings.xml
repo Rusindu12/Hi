@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SriEdu</string>
+    <string name="notification_channel_reminders">படிப்பு நினைவூட்டல்கள்</string>
+    <string name="notification_channel_reminders_desc">உங்கள் அட்டவணைக்கான தினசரி அறிவிப்புகள்</string>
+    <string name="notification_channel_announcements">அறிவிப்புகள்</string>
+    <string name="notification_channel_announcements_desc">புதிய தாள்கள் மற்றும் வினாக்கள்</string>
+</resources>
